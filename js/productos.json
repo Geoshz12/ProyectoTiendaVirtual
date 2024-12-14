@@ -1,0 +1,111 @@
+{
+  "categorias": [
+    {
+      "id": "laptops",
+      "nombre": "Laptops"
+    },
+    {
+      "id": "tablets",
+      "nombre": "Tablets"
+    },
+    {
+      "id": "celulares",
+      "nombre": "Celulares"
+    }
+  ],
+
+  "marcas": [
+    {
+      "id": "dell",
+      "nombre": "Dell"
+    },
+    {
+      "id": "samsung",
+      "nombre": "Samsung"
+    },
+    {
+      "id": "lg",
+      "nombre": "LG"
+    },
+    {
+      "id": "hp",
+      "nombre": "HP"
+    },
+    {
+      "id": "apple",
+      "nombre": "Apple"
+    }
+  ],
+
+  "ram": [
+    {
+      "id": "8GB",
+      "nombre": "8 GB"
+    },
+    {
+      "id": "16GB",
+      "nombre": "16 GB"
+    },
+    {
+      "id": "32GB",
+      "nombre": "32 GB"
+    }
+  ],
+
+  "productos": [
+    {
+      "nombre": "Laptop Dell Inspiron 15",
+      "descripcion": "Laptop de alto rendimiento con procesador Intel Core i7, 16 GB de RAM y 512 GB SSD.",
+      "precio": "799.99",
+      "imagen": "img/laptops/laptop01.jpg",
+      "categoria_id": "laptops",
+      "marca_id": "dell",
+      "ram_id": "16GB"
+    },
+    {
+      "nombre": "Tablet Samsung Galaxy Tab S7",
+      "descripcion": "Pantalla de 11 pulgadas, 128 GB de almacenamiento y compatibilidad con S Pen.",
+      "precio": "649.99",
+      "imagen": "img/tablets/tablet01.jpg",
+      "categoria_id": "tablets",
+      "marca_id": "samsung",
+      "ram_id": "8GB"
+    },
+    {
+      "nombre": "Celular LG Velvet",
+      "descripcion": "Smartphone con pantalla OLED de 6.8 pulgadas, cámara triple y procesador Snapdragon 765G.",
+      "precio": "499.99",
+      "imagen": "img/celulares/celular01.png",
+      "categoria_id": "celulares",
+      "marca_id": "lg",
+      "ram_id": "8GB"
+    },
+    {
+      "nombre": "Laptop HP Pavilion 14",
+      "descripcion": "Pantalla de 14 pulgadas, procesador AMD Ryzen 5, 8 GB de RAM y 256 GB SSD.",
+      "precio": "699.99",
+      "imagen": "img/laptops/laptop02.jpg",
+      "categoria_id": "laptops",
+      "marca_id": "hp",
+      "ram_id": "8GB"
+    },
+    {
+      "nombre": "Tablet Apple iPad Air",
+      "descripcion": "Pantalla Liquid Retina de 10.9 pulgadas, chip M1 y compatibilidad con Apple Pencil.",
+      "precio": "599.99",
+      "imagen": "img/tablets/tablet02.jpg",
+      "categoria_id": "tablets",
+      "marca_id": "apple",
+      "ram_id": "8GB"
+    },
+    {
+      "nombre": "Celular Samsung Galaxy S21",
+      "descripcion": "Pantalla AMOLED de 6.2 pulgadas, cámara triple de 64 MP y procesador Exynos 2100.",
+      "precio": "799.99",
+      "imagen": "img/celulares/celular02.jpg",
+      "categoria_id": "celulares",
+      "marca_id": "samsung",
+      "ram_id": "8GB"
+    }
+  ]
+}

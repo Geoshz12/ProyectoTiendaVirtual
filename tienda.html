@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Virtual</title>
+
+  <!-- Enlace a hoja estilos propia -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <!-- Enlace a Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Enlace a Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+
+
+
+<body>
+
+  <!--------- SECCION - HEADER PRINCIPAL --------->
+  <header class="encabezado-contenedor">
+    <!-- Primera fila -->
+    <div class="d-flex align-items-center w-100">
+      <!-- Logo -->
+      <a href="index.html" class="logo-header me-auto">
+        <img src="img/principal/logo.svg" alt="Logo">
+      </a>
+
+      <!-- Barra de búsqueda -->
+      <div class="barra-busqueda mx-auto w-50 position-relative">
+        <input type="text" class="form-control" id="busqueda" placeholder="Busque en nuestro catálogo">
+        <div class="icono-busqueda">
+          <i class="fas fa-search"></i>
+        </div>
+        <!-- Contenedor para cargar los productos de la busqueda -->
+        <div id="sugerencias" class="list-group position-absolute w-100" style="z-index: 1000; display: none;"></div>
+      </div>
+
+      <!-- Iconos -->
+      <div class="d-flex ms-auto">
+        <!-- Mi cuenta -->
+        <div class="text-center me-3">
+          <a href="#" class="text-white text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalLogin">
+            <i class="fas fa-user fs-4"></i>
+            <div>Mi Cuenta</div>
+          </a>
+        </div>
+
+        <!-- Mi carrito -->
+        <div class="text-center position-relative">
+          <a href="carrito.html" id="icono-carrito" class="text-white text-decoration-none">
+            <i class="fas fa-shopping-cart fs-4"></i>
+            <span id="contador-carrito">0</span>
+            <div>Carrito</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menú de categorías -->
+    <nav id="menu-categorias" class="d-flex w-100 justify-content-center mt-2">
+      <ul class="d-flex list-unstyled gap-4 text-center">
+        <li>
+          <i class="fas fa-laptop me-2 text-white"></i>
+          <a href="tienda.html?categoria=laptops" class="text-white text-decoration-none">Laptops</a>
+        </li>
+        <li>
+          <i class="fas fa-tablet-alt me-2 text-white"></i>
+          <a href="tienda.html?categoria=tablets" class="text-white text-decoration-none">Tablets</a>
+        </li>
+        <li>
+          <i class="fas fa-mobile-alt me-2 text-white"></i>
+          <a href="tienda.html?categoria=celulares" class="text-white text-decoration-none">Celulares</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+
+
+  <!--------- SECCION - TIENDA - LAPTOPS --------->
+  <main class="contenedor-tienda">
+    <aside>
+      <input type="text" id="busqueda-categoria" placeholder="Buscar por nombre..." />
+
+
+      <!-- Boton desplegable para filtrar por marca-->
+      <button id="alternar-marcas">FILTRAR POR MARCA ▼</button>
+      <div id="marcas" class="oculto">
+        <!-- Aquí se cargarán las marcas con JS -->
+      </div>
+
+
+      <!-- Boton desplegable para filtrar por memoria RAM-->
+      <button id="alternar-ram">FILTRAR POR MEMORIA RAM ▼</button>
+      <div id="ram" class="oculto">
+        <!-- Aquí se cargarán las opciones de RAM con JS -->
+      </div>
+
+      
+      <h2>FILTRAR POR PRECIO :</h2>
+      <div class="precio">
+        <input type="range" class="precio-rango" id="precio-rango" min="0" max="1000" step="100" value="1000" />
+        <span class="precio-valor">S/ 1000</span> <!-- Aquí se mostrará el valor del rango -->
+      </div>
+    </aside>
+
+    <section id="productos">
+      <h2 id="titulo-categoria">Productos</h2>
+      <ul id="lista-productos">
+        <!-- aqui se cargaran los productos con JS -->
+      </ul>
+    </section>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script-productos.js"></script>
+</body>
+
+</html>
