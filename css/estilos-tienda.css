@@ -21,10 +21,10 @@ body {
 
 /* <!--- ESTILOS - HEADER PRINCIPAL ---> */
 .encabezado-contenedor {
-  background-color: rgb(33, 112, 199);
+  background-color:#141F2B;
   padding: 0 30px;
   padding-top: 20px;
-  border: 3px solid red;
+  border: 3px solid #DB3732;
   position: sticky;
   top: 0;
   height: 150px;
@@ -34,7 +34,7 @@ body {
 
 .logo-header img {
   height: auto;
-  width: 150px;
+  width: 300px;
 }
 
 .barra-busqueda .icono-busqueda {
@@ -47,7 +47,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: black;
   border-top-right-radius: 0.375rem;
   border-bottom-right-radius: 0.375rem;
 }
@@ -97,143 +97,133 @@ body {
 
 
 
+
+
+
 /* <!--- ESTILOS - tienda-.html ---> */
-.contenedor-tienda {
-  display: grid;
-  grid-template-columns: 1.3fr 4fr;
-}
-
-/* contenedor de los filtros de los productos */
-aside {
-  background-color: #f1baba;
-  position: sticky;
-  top: 150px;
-  left: 0;
-  height: calc(100vh - 150px);
-  padding: 20px;
-  border: solid 2px #2ecc71;
-}
-
+/* Estilos mejorados para el aside */
+/* Estilos para el filtro de categoría */
 #busqueda-categoria {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
   background-color: #fff;
+  transition: border-color 0.3s ease;
 }
 
-
-aside h2 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #333;
-  font-weight: bold;
-}
-
-/* estilos del filtro por marcas */
-
-#alternar-marcas {
-  font-size: 1.2rem;
-  font-weight: bold;
-  background-color: transparent;
-  border: none;
-  color: #007bff;
-  cursor: pointer;
-}
-
-#alternar-marcas:focus {
+#busqueda-categoria:focus {
+  border-color: #007bff;
   outline: none;
 }
 
-#marcas {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+/* Botones de filtro */
+#alternar-marcas,
+#alternar-ram {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  text-align: left;
+  transition: all 0.3s ease;
 }
 
+#alternar-marcas:hover,
+#alternar-ram:hover {
+  background-color: #eaf4ea;
+  border-color: #0069d9;
+}
 
-#marcas.oculto {
+#alternar-marcas:focus,
+#alternar-ram:focus {
+  outline: none;
+  border-color: #0069d9;
+}
+
+/* Sección de marcas y RAM */
+#marcas,
+#ram {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+#marcas.oculto,
+#ram.oculto {
   display: none;
 }
 
-
-
-/* falta agregarlo en el script */
-.marca-item {
+.marca-item,
+.ram-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 8px;
+  gap: 12px;
+  padding: 12px;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1px solid #ccc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.marca-item:hover {
+.marca-item:hover,
+.ram-item:hover {
   background-color: #eaf4ea;
-  /* Color de fondo al pasar el ratón */
+  transform: scale(1.02);
 }
 
-/* Estilo para los checkboxes */
-.marca-checkbox {
-  width: 20px;
-  height: 20px;
+.marca-checkbox,
+.ram-checkbox {
+  width: 22px;
+  height: 22px;
   cursor: pointer;
 }
 
-/* Estilo para las etiquetas (labels) */
-.marca-item label {
+.marca-item label,
+.ram-item label {
   font-size: 1.1rem;
   color: #333;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
-/* ------------------------- */
-
-
-
-/* estilos del filtro por memoria ram */
-
-#alternar-ram {
-  font-size: 1.2rem;
-  font-weight: bold;
-  background-color: transparent;
-  border: none;
+.marca-item label:hover,
+.ram-item label:hover {
   color: #007bff;
-  cursor: pointer;
 }
 
-#alternar-ram :focus {
-  outline: none;
+/* Estilos del filtro por precio */
+h2.h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
 }
 
-#ram {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.precio {
+  margin-top: 10px;
+  padding-top: 5px;
+}
+
+.precio-rango {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.precio-valor {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #28a745;
 }
 
 
-#ram.oculto {
-  display: none;
-}
-
-.ram-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px;
-  background-color: #fff;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
 
 
 
@@ -361,94 +351,36 @@ aside h2 {
 
 
 
-
-/* <!--- ESTILOS - carrito.html ---> */
-#lista-carrito {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#lista-carrito li {
-  background-color: #f7f7f7;
-  padding: 20px;
-  border-bottom: 1px solid #ccc;
-}
-
-#tabla-carrito {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-#tabla-carrito th,
-#tabla-carrito td {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
-}
-
-#tabla-carrito th {
-  background-color: #f2f2f2;
-}
-
-#total-carrito {
-  font-weight: bold;
-  font-size: 18px;
-  margin-top: 20px;
-  text-align: right;
-}
-
-/* contenedor productos del carrito*/
-.carrito-container {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.imagen-carrito {
-  width: 80px;
-  height: auto;
-  object-fit: cover;
-}
-
-
-.productos {
-  flex: 3;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* contenedor resumen productos del carrito*/
-.resumen {
-  flex: 1;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Buttons */
-.btn-continuar {
-  display: block;
-  width: 100%;
-  padding: 0.8rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.btn-continuar:hover {
-  background-color: #0056b3;
-}
-
-
-
-
-
+/* ------ Estilo para el pie de página ------*/ 
+.footer {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5rem;
+  }
+  
+  /* Estilo para la sección de texto en el pie de página */
+  .footer-contenido {
+    color: white;
+  }
+  
+  .footer-inferior {
+    text-align: center;
+    margin-top: 2rem;
+    color: white;
+  }
+  
+  /* Asegurar que el contenido sea legible en la parte inferior */
+  .footer h4 {
+    font-weight: bold;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #f39c12; /* Un color brillante para el hover */
+  }
 

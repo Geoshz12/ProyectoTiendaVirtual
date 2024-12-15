@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+
+
+
+/* <!--- ESTILOS - HEADER PRINCIPAL ---> */
+.encabezado-contenedor {
+  background-color:#141F2B;
+  padding: 0 30px;
+  padding-top: 20px;
+  border: 3px solid #DB3732;
+  position: sticky;
+  top: 0;
+  height: 150px;
+  z-index: 1000;
+}
+
+
+.logo-header img {
+  height: auto;
+  width: 300px;
+}
+
+.barra-busqueda .icono-busqueda {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  background-color: #b3e0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+}
+
+.barra-busqueda input {
+  font-size: 1.15rem;
+}
+
+
+#menu-categorias {
+  border-top: 1.5px solid #ccc;
+  padding-top: 10px;
+
+}
+
+#menu-categorias li {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 5px 40px;
+  transition: all 0.3s ease;
+  /* width: 200px; */
+}
+
+#menu-categorias li a {
+  font-size: 1.1rem;
+}
+
+
+#menu-categorias li:hover {
+  color: #fff;
+  background: #003f7f;
+}
+
+#contador-carrito {
+  background-color: red;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -8px;
+}
+
+
+
+/* <!--- ESTILOS - carrito.html ---> */
+#lista-carrito {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista-carrito li {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+#tabla-carrito {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#tabla-carrito th,
+#tabla-carrito td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+#tabla-carrito th {
+  background-color: #f2f2f2;
+}
+
+#total-carrito {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: right;
+}
+
+/* contenedor productos del carrito*/
+.carrito-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.imagen-carrito {
+  width: 80px;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.productos {
+  flex: 3;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* contenedor resumen productos del carrito*/
+.resumen {
+  flex: 1;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn-continuar {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-continuar:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+/* <!--- ESTILOS - FOOTER ---> */
+.footer {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5rem;
+}
+
+/* Estilo para la sección de texto en el pie de página */
+.footer-contenido {
+  color: white;
+}
+
+.footer-inferior {
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
+}
+
+/* Asegurar que el contenido sea legible en la parte inferior */
+.footer h4 {
+  font-weight: bold;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #f39c12; /* Un color brillante para el hover */
+}
