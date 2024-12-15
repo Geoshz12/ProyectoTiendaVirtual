@@ -100,9 +100,20 @@ body {
 
 
 
-/* <!--- ESTILOS - tienda-.html ---> */
+/* <!--- ESTILOS - tienda.html ---> */
+
 /* Estilos mejorados para el aside */
-/* Estilos para el filtro de categoría */
+
+aside {
+  /* background-color:violet; */
+  position: sticky;
+  top: 150px;
+  left: 0;
+  height: calc(100vh - 150px);
+  padding: 20px;
+  border: solid 2px #2ecc71;
+}
+
 #busqueda-categoria {
   width: 100%;
   padding: 12px;
@@ -212,10 +223,11 @@ h2.h6 {
   padding-top: 5px;
 }
 
-.precio-rango {
+#precio-rango {
   width: 100%;
   margin-bottom: 5px;
 }
+
 
 .precio-valor {
   font-size: 1.1rem;
@@ -241,7 +253,6 @@ h2.h6 {
   border: solid green 3px;
   padding: 20px;
 }
-
 
 /* lista de productos */
 #lista-productos {
@@ -297,7 +308,11 @@ h2.h6 {
 
 
 
-/* Estilo básico del botón agregar*/
+
+
+
+
+/* Estilo básico del botón agregar producto*/
 .boton-agregar {
   position: relative;
   background-color: #28a745;
@@ -348,6 +363,10 @@ h2.h6 {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+
 
 
 
