@@ -187,6 +187,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
     actualizarCarrito();
+
+    // Mostrar alerta al agregar producto
+    alert(`Producto agregado: ${nombre}`);
   };
 
   function actualizarCarrito() {
