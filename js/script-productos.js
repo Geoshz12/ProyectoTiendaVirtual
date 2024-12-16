@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <img class="producto-imagen" src="${prod.imagen}" alt="${prod.nombre}">
         <p class="nombre-marca">${prod.marca_id}</p>
         <h3 class="nombre-producto">${prod.nombre}</h3>
-        <p class="precio-producto"><strong>S/ ${prod.precio}</strong></p>
+        <p class="precio-producto"><strong>S/ ${parseFloat(prod.precio).toFixed(2)}</strong></p> 
         <button class="boton-agregar" onclick="agregarProducto('${prod.nombre}', '${prod.descripcion}', ${prod.precio}, '${prod.imagen}')">
           <span class="boton-texto">AGREGAR AL CARRITO</span>
           <i class="fas fa-shopping-cart boton-icono"></i>
@@ -243,3 +243,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Inicializar
   cargarDatosIniciales();
 });
+
+
+
