@@ -105,13 +105,14 @@ body {
 /* Estilos mejorados para el aside */
 
 aside {
-  /* background-color:violet; */
+  /* background-color:#1b436f; */
   position: sticky;
   top: 150px;
   left: 0;
   height: calc(100vh - 150px);
   padding: 20px;
   border: solid 2px #2ecc71;
+  width: 350px;
 }
 
 #busqueda-categoria {
@@ -239,19 +240,16 @@ h2.h6 {
 
 
 
-
-
-
-
 /* <!--- ESTILOS - CARD DE PRODUCTOS - tienda-.html ---> */
 #productos {
   border: solid red 3px;
-  padding: 0 20px;
+  background-color: #c5dbf2;
 }
 
 #productos h2 {
   border: solid green 3px;
-  padding: 20px;
+  font-size: 2.2rem;
+  padding: 10px;
 }
 
 /* lista de productos */
@@ -260,7 +258,9 @@ h2.h6 {
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   margin-top: 20px;
+  border: solid violet 3px;
 }
+
 
 #lista-productos li {
   background-color: #fff;
@@ -288,7 +288,7 @@ h2.h6 {
 
 .nombre-marca {
   color: #4c4c4c;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
   margin-bottom: 10px;
 
