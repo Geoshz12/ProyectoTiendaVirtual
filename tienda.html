@@ -84,9 +84,9 @@
 
 
   <!--------- SECCION - TIENDA --------->
-  <main class="container-fluid d-flex">
+  <main class="container-fluid d-flex p-0">
     <!-- Sidebar de Filtros -->
-    <aside class="p-3 bg-light border-end sticky-top d-none d-md-block flex-shrink-0" style="width: 300px; top: 150px;">
+    <aside class="d-none d-md-block">
       <section class="mb-3">
         <input type="text" id="busqueda-categoria" class="form-control" placeholder="Buscar por nombre..." />
       </section>
@@ -114,13 +114,13 @@
       <!-- Filtro por Precio -->
       <section class="precio">
         <h2 class="h6 text-secondary">FILTRAR POR PRECIO:</h2>
-        <input type="range" class="form-range precio-rango" id="precio-rango" min="0" max="1000" step="100" value="1000" />
-        <span class="precio-valor d-block text-end fw-bold text-success">S/ 1000</span>
+        <input type="range" class="form-range precio-rango" id="precio-rango" min="0" max="5000" step="100" value="5000" />
+        <span class="precio-valor d-block text-end fw-bold text-success">S/ 5000</span>
       </section>
     </aside>
   
     <!-- Sección de Productos -->
-    <section id="productos" class="flex-grow-1 p-3">
+    <section id="productos" class="flex-grow-1 p-4">
       <h2 id="titulo-categoria" class="h5 text-success">Productos</h2>
       <ul id="lista-productos" class="row g-3 list-unstyled">
         <!-- Los productos se cargarán dinámicamente con JS -->
@@ -132,57 +132,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
   <!--------- SECCION - FOOTER--------->
   <footer class="footer" style="background-image: url('img/principal/footer.jpg');">
-    <div class="footer-contenido text-white">
-      <div class="row">
-        <!-- Sección: Nuestra Empresa -->
-        <div class="col-md-3">
-          <h4 class="pb-2">NUESTRA EMPRESA</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Nuestra empresa</a></li>
-            <li><a href="#" class="text-white">Blog</a></li>
-            <li><a href="#" class="text-white">Nuestras tiendas</a></li>
-          </ul>
-        </div>
-  
-        <!-- Sección: Servicio al Cliente -->
-        <div class="col-md-3">
-          <h4 class="pb-2">SERVICIOS</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Preguntas frecuentes</a></li>
-            <li><a href="#" class="text-white">Guía de compras</a></li>
-            <li><a href="#" class="text-white">Tiempos y costos de envío</a></li>
-            <li><a href="#" class="text-white">Formas de pago</a></li>
-            <li><a href="#" class="text-white">Cambios y devoluciones</a></li>
-          </ul>
-        </div>
-  
-        <!-- Sección: Legales -->
-        <div class="col-md-3">
-          <h4 class="pb-2">LEGALES</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Términos y condiciones</a></li>
-            <li><a href="#" class="text-white">Políticas de privacidad</a></li>
-            <li><a href="#" class="text-white">Libro de reclamaciones</a></li>
-          </ul>
-        </div>
-  
-        <!-- Sección: Contáctenos -->
-        <div class="col-md-3">
-          <h4 class="pb-2">CONTÁCTENOS</h4>
-          <p>Telf.: +51 966 424 678</p>
-          <p>Email: <a href="mailto:visiontecno@gmail.com" class="text-white">Visiontecno@gmail.com</a></p>
-          <p>Lunes a Viernes 8:30 a.m. - 8:30 p.m.</p>
-          <p>Jr. Huaylas N 186, Huaraz - Perú</p>
-        </div>
-      </div>
-    </div>
-  
-    <!-- Solo Copyright -->
-    <div class="footer-inferior text-center mt-4 text-white">
-      <p>&copy; Visión Tecnológica. Todos los derechos reservados.</p>
-    </div>
   </footer>
 
 
