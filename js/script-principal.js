@@ -1,6 +1,9 @@
 // Variables globales
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 const contadorCarrito = document.getElementById("contador-carrito");
+const usuarioInput = document.getElementById("usuario");
+const contraseñaInput = document.getElementById("contraseña");
+const modalLogin = new bootstrap.Modal(document.getElementById('modalLogin'));
 
 // Función para guardar el carrito en Local Storage
 function guardarCarrito() {
@@ -13,44 +16,45 @@ function actualizarContador() {
   contadorCarrito.textContent = totalProductos;
 }
 
-// Código para inicializar eventos y cargar datos dinámicos al cargar la página
-document.addEventListener("DOMContentLoaded", () => {
-  actualizarContador(); // Actualizar el contador de productos
+// Función para manejar el inicio de sesión
+function iniciarSesion(event) {
+  event.preventDefault(); // Prevenir que el formulario se recargue al enviar
 
-});
+  const usuario = usuarioInput.value.trim();
+  const contraseña = contraseñaInput.value.trim();
 
+  // Aquí puedes agregar la lógica de validación con un servidor o verificar contra un archivo predefinido
+  if (usuario === "fran" && contraseña === "123456") {
+    // Simulando un usuario autenticado
+    alert("Inicio de sesión exitoso. ¡Bienvenido!");
 
+    // Guardar el usuario en Local Storage para usarlo en otras páginas
+    localStorage.setItem("usuario", JSON.stringify({ usuario }));
 
+    // Cerrar el modal de inicio de sesión
+    modalLogin.hide();
 
+    // Cambiar el icono de "Mi Cuenta" para reflejar que el usuario ha iniciado sesión
+    const cuentaLink = document.querySelector(".text-center.me-3 a");
+    cuentaLink.innerHTML = `<i class="fas fa-user fs-4"></i><div>Bienvenido, ${usuario}</div>`;
+  } else {
+    alert("Usuario o contraseña incorrectos. Por favor, intenta nuevamente.");
+  }
+}
 
-// script para cambiar colocar el nombre del usuario al iniciar sesion
+// Asignar el evento al formulario de inicio de sesión
+const formularioLogin = document.getElementById("formLogin");
+formularioLogin.addEventListener("submit", iniciarSesion);
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Seleccionamos el botón "ACCEDER" del modal
-  const btnAcceder = document.querySelector("#modalLogin .btn-primary");
+// Actualizar el contador del carrito al cargar la página
+actualizarContador();
 
-  // Seleccionamos los campos de usuario y el elemento donde cambiaremos el texto
-  const inputUsuario = document.getElementById("usuario");
-  const nombreUsuarioDisplay = document.getElementById("nombreUsuario");
-
-  // Agregamos un evento de clic al botón "ACCEDER"
-  btnAcceder.addEventListener("click", function (event) {
-    event.preventDefault(); // Evitamos el envío del formulario
-
-    const nombreUsuario = inputUsuario.value.trim(); // Obtenemos el valor del campo usuario
-
-    if (nombreUsuario) {
-      // Cambiamos el texto de "Mi Cuenta" por el nombre ingresado
-      nombreUsuarioDisplay.textContent = nombreUsuario;
-
-      // Cerramos el modal
-      const modalElement = document.getElementById("modalLogin");
-      const modalBootstrap = bootstrap.Modal.getInstance(modalElement);
-      modalBootstrap.hide();
-    } else {
-      // Si no se ingresa un usuario, mostramos una alerta
-      alert("Por favor, ingresa un nombre de usuario.");
-    }
-  });
-});
-
+// Verificar si el usuario está logueado y mostrar la información
+window.onload = function() {
+  const usuarioGuardado = JSON.parse(localStorage.getItem("usuario"));
+  if (usuarioGuardado) {
+    // Si hay un usuario guardado, mostrar su nombre en el enlace de "Mi Cuenta"
+    const cuentaLink = document.querySelector(".text-center.me-3 a");
+    cuentaLink.innerHTML = `<i class="fas fa-user fs-4"></i><div>Bienvenido, ${usuarioGuardado.usuario}</div>`;
+  }
+};

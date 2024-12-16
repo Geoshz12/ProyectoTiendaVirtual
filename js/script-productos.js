@@ -201,3 +201,16 @@ document.addEventListener("DOMContentLoaded", function () {
   // Inicializar
   cargarDatosIniciales();
 });
+
+
+window.onload = function() {
+  const usuarioGuardado = JSON.parse(localStorage.getItem("usuario"));
+  if (usuarioGuardado) {
+    const cuentaLink = document.querySelector(".text-center.me-3 a");
+    cuentaLink.innerHTML = `<i class="fas fa-user fs-4"></i><div>Bienvenido, ${usuarioGuardado.usuario}</div>`;
+  } else {
+    // Si no hay usuario guardado, mostrar el enlace de inicio de sesión
+    const cuentaLink = document.querySelector(".text-center.me-3 a");
+    cuentaLink.innerHTML = `<i class="fas fa-sign-in-alt fs-4"></i><div>Iniciar sesión</div>`;
+  }
+};
