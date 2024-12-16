@@ -115,6 +115,33 @@
       "categoria_id": "celulares",
       "marca_id": "samsung",
       "ram_id": "8GB"
+    },
+    {
+      "nombre": "Vivo Y16",
+      "descripcion": "Vivo Y16 16GB - 128GB Stellar Black.",
+      "precio": "579.00",
+      "imagen": "img/celulares/celular04.jpg",
+      "categoria_id": "celulares",
+      "marca_id": "samsung",
+      "ram_id": "16GB"
+    },
+    {
+      "nombre": "Moto G24 Power",
+      "descripcion": "Moto G24 Power 256 GB.",
+      "precio": "439.00",
+      "imagen": "img/celulares/celular05.png",
+      "categoria_id": "celulares",
+      "marca_id": "samsung",
+      "ram_id": "8GB"
+    },
+    {
+      "nombre": "HONOR X6b",
+      "descripcion": "HONOR X6b 6GB- 256GB Starry Purple.",
+      "precio": "599.00",
+      "imagen": "img/celulares/celular07.jpg",
+      "categoria_id": "celulares",
+      "marca_id": "samsung",
+      "ram_id": "6GB"
     }
     
   ]
