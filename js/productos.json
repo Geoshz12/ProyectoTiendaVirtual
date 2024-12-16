@@ -34,6 +34,14 @@
     {
       "id": "apple",
       "nombre": "Apple"
+    },
+    {
+      "id": "lenovo",
+      "nombre": "Lenovo"
+    },
+    {
+      "id": "acer",
+      "nombre": "Acer"
     }
   ],
 
@@ -56,7 +64,7 @@
     {
       "nombre": "Laptop Dell Inspiron 15",
       "descripcion": "Laptop de alto rendimiento con procesador Intel Core i7, 16 GB de RAM y 512 GB SSD.",
-      "precio": "799.99",
+      "precio": 799.99,
       "imagen": "img/laptops/laptop01.jpg",
       "categoria_id": "laptops",
       "marca_id": "dell",
@@ -65,7 +73,7 @@
     {
       "nombre": "Tablet Samsung Galaxy Tab S7",
       "descripcion": "Pantalla de 11 pulgadas, 128 GB de almacenamiento y compatibilidad con S Pen.",
-      "precio": "649.99",
+      "precio": 649.99,
       "imagen": "img/tablets/tablet01.jpg",
       "categoria_id": "tablets",
       "marca_id": "samsung",
@@ -74,7 +82,7 @@
     {
       "nombre": "Celular LG Velvet",
       "descripcion": "Smartphone con pantalla OLED de 6.8 pulgadas, cámara triple y procesador Snapdragon 765G.",
-      "precio": "499.99",
+      "precio": 499.99,
       "imagen": "img/celulares/celular01.png",
       "categoria_id": "celulares",
       "marca_id": "lg",
@@ -83,7 +91,7 @@
     {
       "nombre": "Laptop HP Pavilion 14",
       "descripcion": "Pantalla de 14 pulgadas, procesador AMD Ryzen 5, 8 GB de RAM y 256 GB SSD.",
-      "precio": "699.99",
+      "precio": 699.99,
       "imagen": "img/laptops/laptop02.jpg",
       "categoria_id": "laptops",
       "marca_id": "hp",
@@ -92,7 +100,7 @@
     {
       "nombre": "Tablet Apple iPad Air",
       "descripcion": "Pantalla Liquid Retina de 10.9 pulgadas, chip M1 y compatibilidad con Apple Pencil.",
-      "precio": "599.99",
+      "precio": 599.99,
       "imagen": "img/tablets/tablet02.jpg",
       "categoria_id": "tablets",
       "marca_id": "apple",
@@ -101,11 +109,110 @@
     {
       "nombre": "Celular Samsung Galaxy S21",
       "descripcion": "Pantalla AMOLED de 6.2 pulgadas, cámara triple de 64 MP y procesador Exynos 2100.",
-      "precio": "799.99",
+      "precio": 799.99,
       "imagen": "img/celulares/celular02.jpg",
       "categoria_id": "celulares",
       "marca_id": "samsung",
       "ram_id": "8GB"
+    },
+    {
+      "nombre": "Laptop Gamer Acer Nitro V de 15.6",
+      "descripcion": "modelo ANV15-51-7353, Intel Core i7 13620H (13va Gen), 10 núcleos, NVIDIA GeForce RTX 3050, 16GB RAM, disco sólido de 512GB",
+      "precio": 2500.00,
+      "imagen": "img/laptops/laptop03.webp",
+      "categoria_id": "laptops",
+      "marca_id": "lenovo",
+      "ram_id": "16GB"
+    },
+    {
+      "nombre": "Laptop Gamer HP Victus 15 de 15.6",
+      "descripcion": "modelo 15-fa0022la, Intel Core i5-12450H, 8 núcleos, NVIDIA GeForce RTX 3050, 16GB RAM, disco sólido de 512GB",
+      "precio": 3500.00,
+      "imagen": "img/laptops/laptop04.webp",
+      "categoria_id": "laptops",
+      "marca_id": "hp",
+      "ram_id": "16GB"
+    },
+    {
+      "nombre": "Laptop Gamer Acer Predator Helios 18 de 18",
+      "descripcion": "modelo PH18-72-95JD, Intel Core i9 14900HX (14va Gen), 24 núcleos, NVIDIA GeForce RTX 4080, 16GB RAM, disco sólido de 1TB",
+      "precio": 4500.00,
+      "imagen": "img/laptops/laptop05.webp",
+      "categoria_id": "laptops",
+      "marca_id": "acer",
+      "ram_id": "16GB"
+    },
+    {
+      "nombre": "Laptop Gamer Asus ROG Zephyrus G14 de 14",
+      "descripcion": "modelo GA403UV-QS091W, AMD Ryzen 9 8945HS, NVIDIA GeForce RTX 4060, 32GB RAM, disco sólido de 1TB",
+      "precio": 5000.00,
+      "imagen": "img/laptops/laptop06.webp",
+      "categoria_id": "laptops",
+      "marca_id": "asus",
+      "ram_id": "32GB"
+    },
+    {
+      "nombre": "Laptop Gamer Lenovo Legion Pro 7i",
+      "descripcion": "Intel Core i9-14900HX (14va Gen), 24 núcleos, NVIDIA GeForce RTX 4080, 32GB RAM, disco sólido de 1TB",
+      "precio": 4800.00,
+      "imagen": "img/laptops/laptop07.webp",
+      "categoria_id": "laptops",
+      "marca_id": "lenovo",
+      "ram_id": "32GB"
+    },
+    {
+      "nombre": "Laptop Gamer Asus TUF F15 de 15.6",
+      "descripcion": "intel Core i5-12500H (12va Gen), 12 núcleos, NVIDIA GeForce RTX 3050, 16GB RAM, disco sólido de 1TB",
+      "precio": 3500.00,
+      "imagen": "img/laptops/laptop08.webp",
+      "categoria_id": "laptops",
+      "marca_id": "asus",
+      "ram_id": "16GB"
+    },
+    {
+      "nombre": "MacBook Air de 13.6",
+      "descripcion": "procesador M3, 8GB RAM, disco sólido de 256GB, Medianoche",
+      "precio": 4300.00,
+      "imagen": "img/laptops/laptop09.webp",
+      "categoria_id": "laptops",
+      "marca_id": "apple",
+      "ram_id": "8GB"
+    },
+    {
+      "nombre": "Tablet Samsung Galaxy Tab S9 FE",
+      "descripcion": "Pantalla de 10.9 pulgadas, 128GB 8GB RAM Graphite",
+      "precio": 1449.99,
+      "imagen": "img/tablets/tablet03.webp",
+      "categoria_id": "tablets",
+      "marca_id": "samsung",
+      "ram_id": "8GB"
+    },
+    {
+      "nombre": "iPad (10ma Gen) E",
+      "descripcion": "Pantalla de 10.9 pulgadas, A14 WiFi 64GB Plata",
+      "precio": 1699.99,
+      "imagen": "img/tablets/tablet04.webp",
+      "categoria_id": "tablets",
+      "marca_id": "apple",
+      "ram_id": "8GB"
+    },
+    {
+      "nombre": "Tablet Lenovo Yoga Tab",
+      "descripcion": "Pantalla de 13 pulgadas, 128GB 8GB RAM",
+      "precio": 1249.99,
+      "imagen": "img/tablets/tablet05.webp",
+      "categoria_id": "tablets",
+      "marca_id": "lenovo",
+      "ram_id": "8GB"
+    },
+    {
+      "nombre": "iPad Pro 13",
+      "descripcion": "Pantalla de 13 pulgadas, M4 WiFi 256GB Negro Espacial (2024)",
+      "precio": 4999.99,
+      "imagen": "img/tablets/tablet06.webp",
+      "categoria_id": "tablets",
+      "marca_id": "lenovo",
+      "ram_id": "16GB"
     }
   ]
 }
