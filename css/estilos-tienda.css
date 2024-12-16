@@ -1,0 +1,32 @@
+/* Estilo para el pie de página */
+.footer {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5rem;
+}
+
+/* Estilo para la sección de texto en el pie de página */
+.footer-contenido {
+  color: white;
+}
+
+.footer-inferior {
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
+}
+
+/* Asegurar que el contenido sea legible en la parte inferior */
+.footer h4 {
+  font-weight: bold;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #f39c12; /* Un color brillante para el hover */
+}

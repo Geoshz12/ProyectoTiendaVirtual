@@ -106,6 +106,16 @@
       "categoria_id": "celulares",
       "marca_id": "samsung",
       "ram_id": "8GB"
+    },
+    {
+      "nombre": "Redmi Note 13 Pro",
+      "descripcion": "Redmi Note 13 Pro 8GB-256GB Negro.",
+      "precio": "780.00",
+      "imagen": "img/celulares/celular03.jpg",
+      "categoria_id": "celulares",
+      "marca_id": "samsung",
+      "ram_id": "8GB"
     }
+    
   ]
 }
