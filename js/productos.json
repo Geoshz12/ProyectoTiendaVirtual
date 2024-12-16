@@ -213,6 +213,68 @@
       "categoria_id": "tablets",
       "marca_id": "lenovo",
       "ram_id": "16GB"
+    },    {
+      "nombre": "Laptop HP Pavilion 14",
+      "descripcion": "Pantalla de 14 pulgadas, procesador AMD Ryzen 5, 8 GB de RAM y 256 GB SSD.",
+      "precio": "699.99",
+      "imagen": "img/laptops/laptop02.jpg",
+      "categoria_id": "laptops",
+      "marca_id": "hp",
+      "ram_id": "8GB"
+    },
+    {
+      "nombre": "Tablet Apple iPad Air",
+      "descripcion": "Pantalla Liquid Retina de 10.9 pulgadas, chip M1 y compatibilidad con Apple Pencil.",
+      "precio": "599.99",
+      "imagen": "img/tablets/tablet02.jpg",
+      "categoria_id": "tablets",
+      "marca_id": "apple",
+      "ram_id": "8GB"
+    },
+    {
+      "nombre": "Celular Samsung Galaxy S21",
+      "descripcion": "Pantalla AMOLED de 6.2 pulgadas, cámara triple de 64 MP y procesador Exynos 2100.",
+      "precio": "799.99",
+      "imagen": "img/celulares/celular02.jpg",
+      "categoria_id": "celulares",
+      "marca_id": "samsung",
+      "ram_id": "8GB"
+    },
+    {
+      "nombre": "Redmi Note 13 Pro",
+      "descripcion": "Redmi Note 13 Pro 8GB-256GB Negro.",
+      "precio": "780.00",
+      "imagen": "img/celulares/celular03.jpg",
+      "categoria_id": "celulares",
+      "marca_id": "samsung",
+      "ram_id": "8GB"
+    },
+    {
+      "nombre": "Vivo Y16",
+      "descripcion": "Vivo Y16 16GB - 128GB Stellar Black.",
+      "precio": "579.00",
+      "imagen": "img/celulares/celular04.jpg",
+      "categoria_id": "celulares",
+      "marca_id": "samsung",
+      "ram_id": "16GB"
+    },
+    {
+      "nombre": "Moto G24 Power",
+      "descripcion": "Moto G24 Power 256 GB.",
+      "precio": "439.00",
+      "imagen": "img/celulares/celular05.png",
+      "categoria_id": "celulares",
+      "marca_id": "samsung",
+      "ram_id": "8GB"
+    },
+    {
+      "nombre": "HONOR X6b",
+      "descripcion": "HONOR X6b 6GB- 256GB Starry Purple.",
+      "precio": "599.00",
+      "imagen": "img/celulares/celular07.jpg",
+      "categoria_id": "celulares",
+      "marca_id": "samsung",
+      "ram_id": "6GB"
     }
   ]
 }
